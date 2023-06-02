@@ -133,6 +133,16 @@ class DrawingsTest {
 		};
 		//objects[0] = "Hello!";	// ArrayStoreException	
 		
+		//Object object = Integer.valueOf(10); // Wrapper class Integer
+		Object object = 10;
+		
+		assertTrue(object instanceof Integer);
+		Integer y = (Integer)object;
+		assertTrue(y.intValue() == 10);
+		
+		int z = (int)object;
+		//int z = ((Integer)object).intValue();
+		
 	}
 
 }
